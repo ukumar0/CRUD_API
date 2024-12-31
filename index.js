@@ -13,7 +13,7 @@ app.use(express.json())
 app.use('/api/products', productRoute)
 
 
-mongoose.connect('mongodb+srv://admin:dbUserPassword@backenddb.5q07h.mongodb.net/NODE_API?retryWrites=true&w=majority&appName=BackendDB')
+mongoose.connect('<Your DB Link>')
 .then(()=>{
     console.log('Connected to Database')
     app.listen(PORT, ()=>{
